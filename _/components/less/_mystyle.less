@@ -1,2 +1,60 @@
 @import "_menu_icon.less";
 @import "_layout.less";
+@import "_sidebar.less";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
+
+body {margin: 0;overflow-x: hidden; background-color: white;}
+
+.background { background: #fff; }
+.main { padding-top: 5em;}
+
+.header h1 {
+    text-transform:uppercase;
+    text-align:center;
+    font-size: 2em; font-weight:100;
+}
+
+.header h1 span {
+    display: block; font-weight:900; font-family:'Titillium Web', sans-serif;
+    font-size:3.2em; line-height:65px;
+}
+
+.container.container-resized {
+    max-width: (72vw);
+}
+
+/* 768 breakpoint ----------- */
+@media only screen  and (min-width : 768px) {
+    .background { background: #fff url(../../img/W2P_background_720.png) no-repeat 0px 0px; }
+    .main { padding-top: 5em;}
+    .header { position: relative; left:10px; }
+
+    .header h1 { font-size: 1.8em; font-weight:100;
+    }
+    .header h1 span { font-size:3.0em; line-height:58px;
+    }
+}
+
+/* 992 breakpoint ----------- */
+@media only screen  and (min-width : 992px) {
+    .background { background: #fff url(../../img/W2P_background_940.png) no-repeat 0px 0px; }
+    .main { padding-top: 7em;}
+    .header { position: relative; left:7px; }
+
+    .header h1 { font-size: 2em; font-weight:100;
+    }
+    .header h1 span { font-size:3.2em; line-height:65px;
+    }
+}
+
+/* 1200 breakpoint ----------- */
+@media only screen  and (min-width : 1200px) {
+    .background { background: #fff url(../../img/W2P_background_1140.png) no-repeat 0px 0px; }
+    .main { padding-top: 10em;}
+    .header { position: relative; left:4px; }
+
+    .header h1 { font-size: 2.1em; font-weight:100;
+    }
+    .header h1 span { font-size:3.3em; line-height:76px;
+    }
+}

@@ -271,6 +271,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/_\/components\/less\/_sidebar.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_\/components\/less\/_sidebar.less",
+		"outputAbbreviatedPath": "\/_\/components\/css\/_sidebar.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/_\/components\/less\/alerts.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -1742,6 +1762,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/app\/min\/questions-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/min\/questions-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/questions-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/app\/questions.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1752,6 +1783,39 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/img\/W2P_background_1140.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119655,
+		"inputAbbreviatedPath": "\/img\/W2P_background_1140.png",
+		"outputAbbreviatedPath": "\/img\/W2P_background_1140.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/W2P_background_720.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63941,
+		"inputAbbreviatedPath": "\/img\/W2P_background_720.png",
+		"outputAbbreviatedPath": "\/img\/W2P_background_720.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/W2P_background_940.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92677,
+		"inputAbbreviatedPath": "\/img\/W2P_background_940.png",
+		"outputAbbreviatedPath": "\/img\/W2P_background_940.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/index.php": {
 		"fileType": 8192,

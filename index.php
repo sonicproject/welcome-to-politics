@@ -18,15 +18,17 @@
 
   <body ng-controller="MainCtrl">
   	<div id="wrapper">						<!-- wrapper -->
-  		<?php include 'sidebar.php'; ?>			<!-- Sidebar -->
-  		<?php include 'page_content.php'; ?> 	<!-- Page Content -->
-  	</div>									<!-- /#wrapper -->
+  		<?php include 'sidebar.php'; ?>			<!-- /sidebar -->
+  		<?php include 'page_content.php'; ?> 	<!-- /page content -->
+  	</div>									<!-- /wrapper -->
 
 
 <!-- JS links -->
 	<script src="_/js/bootstrap.js"></script>					<!-- bootstrap.js, angular.js, questions.js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script type="text/javascript" src="app/questions.js"></script>
+
+
     <script src="_/js/myscript.js"></script>					<!-- myscript.js -->
   </body>
 </html>

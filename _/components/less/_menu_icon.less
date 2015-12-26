@@ -1,4 +1,3 @@
-
 /* Menu icon styles */
 
 .menu-icon-wrapper {
@@ -7,9 +6,33 @@
 	display: inline-block;
     width: 34px;
     height: 34px;
-	margin: .2em;
+	margin: 1em .5em 0 0;
 	pointer-events: none;
 	transition: 0.1s;
+	z-index: 100;
+}
+
+/* 768 breakpoint ----------- */
+@media only screen  and (min-width : 768px) {
+	.menu-icon-wrapper {
+		margin: 0em 0em 0 0;
+	}
+
+	.menu-icon-wrapper.toggled {
+		margin: .5em .5em 0 0;
+	}
+}
+
+/* 992 breakpoint ----------- */
+@media only screen  and (min-width : 992px) {
+	.menu-icon-wrapper {
+		margin: 1em .5em 0 0;
+	}
+}
+
+
+.menu-icon-wrapper.toggled {
+	right:-24vw;
 }
 												/* not sure if this scaled rule is necessary - check on iPhone */
 .menu-icon-wrapper.scaled {
@@ -37,6 +60,11 @@
     stroke-linejoin: round;
 	fill: transparent;
 }
+
+.menu-icon-wrapper.toggled svg path {
+	stroke: #fff;
+}
+
 
 .menu-icon-wrapper .menu-icon-trigger {
 	position: relative;
