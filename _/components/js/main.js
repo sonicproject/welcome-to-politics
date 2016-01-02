@@ -10,7 +10,7 @@
 	    s.draw('80% - 240', '80%', 0.3, {
 	        delay: 0.1,
 	        callback: function() {
-	            inAC2(s)
+	            inAC2(s);
 	        }
 	    });
 	}
@@ -24,7 +24,7 @@
 	function inB(s) {
 	    s.draw(beginB - 60, endB + 60, 0.1, {
 	        callback: function() {
-	            inB2(s)
+	            inB2(s);
 	        }
 	    });
 	}
@@ -41,7 +41,7 @@
 	    s.draw('90% - 240', '90%', 0.1, {
 	        easing: ease.ease('elastic-in', 1, 0.3),
 	        callback: function() {
-	            outAC2(s)
+	            outAC2(s);
 	        }
 	    });
 	}
@@ -49,7 +49,7 @@
 	function outAC2(s) {
 	    s.draw('20% - 240', '20%', 0.3, {
 	        callback: function() {
-	            outAC3(s)
+	            outAC3(s);
 	        }
 	    });
 	}

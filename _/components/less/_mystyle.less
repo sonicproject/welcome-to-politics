@@ -5,8 +5,18 @@
 
 body {margin: 0;overflow-x: hidden; background-color: white;}
 
+hr { width
+    color: #fff;
+}
+.btn-lg{
+    font-size: 1.2em;
+    border-radius: 0px;
+    padding: 6px 1.6em 6px 1.6em;
+    margin: 1px;
+}
+
 .background { background: #fff; }
-.main { padding-top: 5em;}
+.main { padding-top: 4em;}
 
 .header h1 {
     text-transform:uppercase;
@@ -26,24 +36,26 @@ body {margin: 0;overflow-x: hidden; background-color: white;}
 /* 768 breakpoint ----------- */
 @media only screen  and (min-width : 768px) {
     .background { background: #fff url(../../img/W2P_background_720.png) no-repeat 0px 0px; }
-    .main { padding-top: 5em;}
+    .main { padding-top: 6em;}
+    .main.toggled { padding-top:5em;}
     .header { position: relative; left:10px; }
 
-    .header h1 { font-size: 1.8em; font-weight:100;
+    .header h1 { font-size: 1.7em; font-weight:100;
     }
-    .header h1 span { font-size:3.0em; line-height:58px;
+    .header h1 span { font-size:2.9em; line-height:53px;
     }
 }
 
 /* 992 breakpoint ----------- */
 @media only screen  and (min-width : 992px) {
     .background { background: #fff url(../../img/W2P_background_940.png) no-repeat 0px 0px; }
-    .main { padding-top: 7em;}
+    .main { padding-top: 8em;}
+    .main.toggled { padding-top: 6em;}
     .header { position: relative; left:7px; }
 
-    .header h1 { font-size: 2em; font-weight:100;
+    .header h1 { font-size: 1.9em; font-weight:100;
     }
-    .header h1 span { font-size:3.2em; line-height:65px;
+    .header h1 span { font-size:3.1em; line-height:60px;
     }
 }
 
@@ -51,10 +63,26 @@ body {margin: 0;overflow-x: hidden; background-color: white;}
 @media only screen  and (min-width : 1200px) {
     .background { background: #fff url(../../img/W2P_background_1140.png) no-repeat 0px 0px; }
     .main { padding-top: 10em;}
+    .main.toggled { padding-top: 7em;}
     .header { position: relative; left:4px; }
 
     .header h1 { font-size: 2.1em; font-weight:100;
     }
-    .header h1 span { font-size:3.3em; line-height:76px;
+    .header h1 span { font-size:3.3em; line-height:72px;
     }
+}
+
+/* 1400 breakpoint ----------- */
+@media only screen  and (min-width : 1400px) {
+    .main.toggled { padding-top: 8em;}
+}
+
+/* 1500 breakpoint ----------- */
+@media only screen  and (min-width : 1500px) {
+    .main.toggled { padding-top: 9em;}
+}
+
+/* 1600 breakpoint ----------- */
+@media only screen  and (min-width : 1600px) {
+    .main.toggled { padding-top: 10em;}
 }

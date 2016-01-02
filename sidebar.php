@@ -1,9 +1,16 @@
 
       <div id="sidebar-wrapper">
           <ul class="sidebar-nav">
-              <h2 id="sidebarH2">Topics</h2>
+              <hr/>
+                  <h2 class="sidebarH2">Topics</h2>
               <li ng-repeat="category in categories">
-                  <a href="#">{{category.name}}</a>
+                  <a class="btn-lg btn-block"
+                 href="#">{{category.name}}</a>
               </li>
-          </ul> 	<!-- /class=sidebar-nav -->
+              <hr/>
+              <li id="sidemenu">
+                 <button type="button" class="btn btn-primary btn-block">Post a Question
+                 </button>
+             </li>
+        </ul> 	<!-- /class=sidebar-nav -->
       </div>		<!-- /#sidebar-wrapper -->

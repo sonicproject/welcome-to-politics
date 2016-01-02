@@ -1,4 +1,9 @@
 
+.headbar {
+    height:56px;
+    background-color: #000;
+}
+
 #page-content-wrapper>.container > .row.background {
     background-size: contain;
 }
@@ -30,7 +35,7 @@
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 
@@ -39,11 +44,28 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 25vw;
+    width: 100vw;
     z-index: 50;
 }
 
 #wrapper.toggled #page-content-wrapper {
 position: relative;
-margin-right: 25vw;
+margin-right: 100vw;
+}
+
+/* 768 breakpoint ----------- */
+@media only screen  and (min-width : 768px) {
+    #wrapper.toggled {
+        padding-right: 25vw;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 25vw;
+        z-index: 50;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 25vw;
+    }
 }

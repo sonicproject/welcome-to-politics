@@ -33,7 +33,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/_\/components\/js\/affix.js": {
 		"fileType": 64,
@@ -129,6 +129,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_\/components\/js\/main.js",
 		"outputAbbreviatedPath": "\/_\/components\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/_\/components\/js\/min\/main-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_\/components\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/_\/components\/js\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
