@@ -21,7 +21,7 @@
                           <h1>WELCOME TO <span>POLITICS</span>.COM</h1>
                       </div>
                       <div class="main">
-                          <div id="Poll" ng-controller="PollController">
+                          <div id="Poll">
                                <div class="progress">
                                  <div class="
                                     {{ ($index === activeQuestion) ? 'on' : 'off' }}

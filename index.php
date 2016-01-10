@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Welcome to Politics!</title>
+	<title>Welcome to Politics! | 2016 Presidential Elections | Political Debate &amp; Polling</title>
 
     <link href="_/css/bootstrap.css" rel="stylesheet">
     <link href="_/css/mystyle.css" rel="stylesheet">
@@ -17,10 +17,10 @@
 
 
   <body>  <!--  removed ng-controller="MainCtrl" -->
-  	<div id="wrapper">						<!-- wrapper -->
-  		<?php include 'sidebar.php'; ?>			<!-- /sidebar -->
-  		<?php include 'page_content.php'; ?> 	<!-- /page content -->
-  	</div>									<!-- /wrapper -->
+  	<div id="wrapper"  ng-controller="PollController">		<!-- wrapper -->
+  		<?php include 'sidebar.php'; ?>						<!-- /sidebar -->
+  		<?php include 'page_content.php'; ?> 				<!-- /page content -->
+  	</div>													<!-- /wrapper -->
 
 
 <!-- JS links -->
