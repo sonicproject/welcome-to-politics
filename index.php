@@ -26,7 +26,6 @@
 <!-- JS links -->
 	<script src="_/js/bootstrap.js"></script>					<!-- bootstrap.js, angular.js, questions.js -->
 	<script src="_/js/myscript.js"></script>					<!-- myscript.js -->
-	<script type="text/javascript" src="app/questions.js"></script>
 
   </body>
 </html>

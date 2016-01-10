@@ -23,7 +23,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Bernie Sanders"},
             { "id" : 1, "text" : "Ted Cruz"},
-            { "id" : 2, "text" : "Hillary CLinton"},
+            { "id" : 2, "text" : "Hillary Clinton"},
             { "id" : 3, "text" : "Donald Trump"},
             { "id" : 3, "text" : "None of the Above"}
         ],
