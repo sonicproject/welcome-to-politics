@@ -22,15 +22,12 @@
 #Poll h2 { font-size: 3em; margin: 0px; font-weight:100;}
 #Poll h3 { font-size: 2.4em; margin: 0px; font-weight:100;}
 #Poll p { margin: 0px 0px 14px 0px;}
-#Poll .btn {
-    display: inline-block; cursor:pointer; background-color:#0053c3;
-    color: #fff; text-decoration: none;
-    padding: 5px 15px; border-radius:6px;
-}
 
 /* Intro */
-#Poll .intro { position: absolute; top:165px; left: 1060px; width: 550px; }
+#Poll .intro { position: absolute; top:153px; left: 1060px; width: 550px; }
 #Poll .intro p { margin: 0px 0px 40px 0px; font-size:1.3em; }
+#Poll .intro img { position: relative; left:-21px;}
+#Poll .intro .btn { cursor:pointer; padding: 5px 30px; position: relative; left:70px;}
 
 /* Progress Bar */
 #Poll .progress {
@@ -55,10 +52,10 @@
 #Poll .progress div.correct::after {top:0px; opacity:1;}
 
 /* Questions */
-#Poll .question { width:550px; position: absolute; top: 165px; left:1060px;}
+#Poll .question { width:550px; position: absolute; top: 153px; left:1060px;}
 #Poll .question .txt{ font-size:1.6em; margin: 0px 0px 20px 0px;}
 #Poll .question .ans{
-    display:inline-block; font-size:1.1em; width: 225px; border: 2px solid rgba(209,31,38,.4);
+    display:inline-block; font-size:1.1em; width: 225px; border: 2px solid rgba(200,30,35,.4);
     border-radius:6px; padding: 10px; margin: 0px 15px 15px 0px; position: relative;
 }
 #Poll .question .ans.selected { border-color: #0053c3;} //be4b16
@@ -73,7 +70,7 @@
 #Poll .question .ans.correct::after { background-image: url(../images/icon_correct.svg); }
 
 #Poll .question.unanswered .ans{ cursor:pointer; }
-#Poll .question.unanswered .ans:hover{ background-color: rgba(3,255,103, 0.1); }
+#Poll .question.unanswered .ans:hover{ background-color: rgba(0,250,100, 0.1); }
 
 #Poll .question.answered .ans{ cursor:default; }
 /* Feedback */
@@ -85,7 +82,7 @@
 #Poll .answered .feedback { visibility: visible; opacity:1; margin-top:10px;}
 
 /* Results */
-#Poll .results { position:absolute; top:165px; left:1060px; width:550px;}
+#Poll .results { position:absolute; top:153px; left:1060px; width:550px;}
 #Poll .results .share { margin-top: 40px;}
 
 #Poll .results .share a.btn { margin-right: 20px; padding:9px 15px 8px 42px;
@@ -121,7 +118,7 @@
     #Poll .question .txt { font-size: 1.4em; margin-bottom: 15px; }
     #Poll .question .ans { font-size: 1em; padding: 5px 10px; margin-bottom: 10px; }
 
-    #Poll .results { width: 260px; top: 150px; left: 330px; }
+    #Poll .results { width: 260px; top: 153px; left: 330px; }
     #Poll .results .share { margin-top: 20px; }
     #Poll .results a.btn { margin-bottom: 20px; }
 

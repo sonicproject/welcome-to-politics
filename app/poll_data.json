@@ -9,23 +9,26 @@
         "feedback" : "Let's make America Great again!"
     },
     {
-        "question" : "Do you support Hillary for president?",
+        "question" : "Do you support Hillary Clinton for president?",
         "answers"   : [
             { "id" : 0, "text" : "Yes"},
-            { "id" : 1, "text" : "No"},
-            { "id" : 2, "text" : "other"}
+            { "id" : 1, "text" : "No"}
         ],
         "correct" : 0,
         "feedback" : "Love Trumps Hate!"
     },
     {
-        "question" : "Who would you be most likely to vote for in 2016?",
+        "question" : "Who are you most likely to vote for in 2016?",
         "answers"   : [
             { "id" : 0, "text" : "Bernie Sanders"},
-            { "id" : 1, "text" : "Ted Cruz"},
+            { "id" : 1, "text" : "Deez Nuts"},
             { "id" : 2, "text" : "Hillary Clinton"},
             { "id" : 3, "text" : "Donald Trump"},
-            { "id" : 3, "text" : "None of the Above"}
+            { "id" : 4, "text" : "Rand Paul"},
+            { "id" : 5, "text" : "Ted Cruz"},
+            { "id" : 6, "text" : "Ben Carson"},
+            { "id" : 7, "text" : "Marco Rubio"},
+            { "id" : 8, "text" : "None of the Above"}
         ],
         "correct" : 0,
         "feedback" : "You didn't really think we were gonna include Jeb, did ya?"

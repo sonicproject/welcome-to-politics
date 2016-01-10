@@ -30,8 +30,10 @@
                                  ng-repeat="myQuestion in myQuestions"></div>
                              </div><!-- /progress -->
                               <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
-                                  <p><em>You ready to <strong>get in the ring</strong>?</em></p>
-                                  <p class="btn" ng-click="activeQuestion = 0">Begin</p>
+                                  <img src="_/images/debate-gloves.jpg" alt="boxing gloves for debate" height="108" width="302">
+                                      <p><em>You ready to <strong>get in the ring</strong>?</em></p>
+                                  <br>
+                                  <p class="btn btn-primary" ng-click="activeQuestion = 0">Begin</p>
                               </div><!-- /intro -->
 
                               <div class="question
