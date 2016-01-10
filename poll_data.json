@@ -1,0 +1,52 @@
+[
+    {
+        "question" : "Do you support Donald Trump for president?",
+        "answers"   : [
+            { "id" : 0, "text" : "yes"},
+            { "id" : 1, "text" : "no"}
+        ],
+        "correct" : 0,
+        "feedback" : "Let's make America Great again!"
+    },
+    {
+        "question" : "Do you support Hillary for president?",
+        "answers"   : [
+            { "id" : 0, "text" : "yes"},
+            { "id" : 1, "text" : "no"},
+            { "id" : 2, "text" : "other"}
+        ],
+        "correct" : 0,
+        "feedback" : "Let's make America Great again!"
+    },
+    {
+        "question" : "Who would you be most likely to vote for in 2016?",
+        "answers"   : [
+            { "id" : 0, "text" : "Bernie Sanders"},
+            { "id" : 1, "text" : "Ted Cruz"},
+            { "id" : 2, "text" : "Hillary CLinton"},
+            { "id" : 3, "text" : "Donald Trump"}
+        ],
+        "correct" : 0,
+        "feedback" : "Socialism is cool!"
+    },
+    {
+        "question" : "Do you support additional laws on gun control?",
+        "answers"   : [
+            { "id" : 0, "text" : "yes"},
+            { "id" : 1, "text" : "no"},
+            { "id" : 2, "text" : "other"}
+        ],
+        "correct" : 0,
+        "feedback" : "Let's make America Great again!"
+    },
+    {
+        "question" : "Do you support Jeb Bush for president?",
+        "answers"   : [
+            { "id" : 0, "text" : "yes"},
+            { "id" : 1, "text" : "no"},
+            { "id" : 2, "text" : "other"}
+        ],
+        "correct" : 0,
+        "feedback" : "You didn't really say say yes to Jeb, did ya?"
+    }
+]

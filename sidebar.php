@@ -2,10 +2,9 @@
       <div id="sidebar-wrapper">
           <ul class="sidebar-nav">
               <hr/>
-                  <h2 class="sidebarH2">Topics</h2>
+              <h2 class="sidebarH2">Topics</h2>
               <li ng-repeat="category in categories">
-                  <a class="btn-lg btn-block"
-                 href="#">{{category.name}}</a>
+                  <a class="btn-lg btn-block" href="#">{{category.name}}</a>
               </li>
               <hr/>
               <li id="sidemenu">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="questions">
+<html lang="en" ng-app="Poll">
 <head>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 </head>
 
 
-  <body ng-controller="MainCtrl">
+  <body>  <!--  removed ng-controller="MainCtrl" -->
   	<div id="wrapper">						<!-- wrapper -->
   		<?php include 'sidebar.php'; ?>			<!-- /sidebar -->
   		<?php include 'page_content.php'; ?> 	<!-- /page content -->
@@ -25,10 +25,8 @@
 
 <!-- JS links -->
 	<script src="_/js/bootstrap.js"></script>					<!-- bootstrap.js, angular.js, questions.js -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="_/js/myscript.js"></script>					<!-- myscript.js -->
 	<script type="text/javascript" src="app/questions.js"></script>
 
-
-    <script src="_/js/myscript.js"></script>					<!-- myscript.js -->
   </body>
 </html>

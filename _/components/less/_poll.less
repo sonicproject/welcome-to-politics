@@ -1,0 +1,176 @@
+
+#Poll {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   position: relative;
+   overflow: hidden;
+   height:650px;
+   margin: auto;
+}
+
+#Poll h1 {
+    font-size: 2em; margin: 0px; font-weight:100;
+    position: absolute; top: 25px; left: 36px;
+}
+#Poll h1 span {
+    display: block; font-weight:900;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:3.2em; line-height:65px;
+}
+
+#Poll h2 { font-size: 3em; margin: 0px; font-weight:100;}
+#Poll h3 { font-size: 2.4em; margin: 0px; font-weight:100;}
+#Poll p { margin: 0px 0px 14px 0px;}
+#Poll .btn {
+    display: inline-block; cursor:pointer; background-color:#0053c3;
+    color: #fff; text-decoration: none;
+    padding: 5px 15px; border-radius:6px;
+}
+
+/* Intro */
+#Poll .intro { position: absolute; top:165px; left: 1060px; width: 550px; }
+#Poll .intro p { margin: 0px 0px 40px 0px; font-size:1.3em; }
+
+/* Progress Bar */
+#Poll .progress {
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+    box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+    width:350px; background-color: inherit; height:3em;
+    margin: auto;
+    position: relative; left: 2px;
+    }
+
+#Poll .progress div {
+    position:relative; display:inline-block; width:35px; height:35px; margin-left: 16px; margin-right: 16px;
+    border-radius: 50%; background-color: rgba(0,83,195,.5); transition: background-color 1s;
+}
+#Poll .progress div::after {
+    content:''; display:block; width: 65px; height:40px; position:absolute; top:-60px; left:1px;
+    background: url(../images/star.svg) no-repeat 0px 0px;
+    transition: opacity 1s top: 1s; //opacity: 0;
+}
+#Poll .progress div.on,
+#Poll .progress div.answered {background-color: #d11f26;}
+#Poll .progress div.correct::after {top:0px; opacity:1;}
+
+/* Questions */
+#Poll .question { width:550px; position: absolute; top: 165px; left:1060px;}
+#Poll .question .txt{ font-size:1.6em; margin: 0px 0px 20px 0px;}
+#Poll .question .ans{
+    display:inline-block; font-size:1.1em; width: 225px; border: 2px solid rgba(0,83,195,.4); //211,32,39
+    border-radius:6px; padding: 10px; margin: 0px 15px 15px 0px; position: relative;
+}
+#Poll .question .ans.selected { border-color: #0053c3;} //be4b16
+#Poll .question .ans.correct { border-color: #459a2e;}
+
+#Poll .question .ans::after { content: ''; display:block; width: 20px; height: 20px;
+    background: no-repeat 0px 0px; background-size: 20px 20px;
+    position:absolute; top:5px; right:5px;
+}
+
+#Poll .question .ans.selected::after { background-image: url(../images/icon_incorrect.svg); }
+#Poll .question .ans.correct::after { background-image: url(../images/icon_correct.svg); }
+
+#Poll .question.unanswered .ans{ cursor:pointer; }
+#Poll .question.unanswered .ans:hover{ background-color: rgba(0,83,195, 0.13); }  //239, 189, 102
+
+#Poll .question.answered .ans{ cursor:default; }
+/* Feedback */
+#Poll .feedback { color:#000; margin-top: 50px; transition: opacity 1.5s, margin-top 1.5s;
+    visibilty:hidden; opacity:0;
+}
+#Poll .feedback .btn { margin-top: 5px; }
+#Poll .feedback strong { color:#459a2e; }
+#Poll .answered .feedback { visibility: visible; opacity:1; margin-top:10px;}
+
+/* Results */
+#Poll .results { position:absolute; top:165px; left:1060px; width:550px;}
+#Poll .results .share { margin-top: 40px;}
+
+#Poll .results .share a.btn { margin-right: 20px; padding:9px 15px 8px 42px;
+    background-repeat: no-repeat; background-position: 10px 5px; background-size: 25px 25px;}
+
+#Poll .results .share a.btn.email { background-color: #f0a121; background-image: url(../images/icon_email.svg);}
+#Poll .results .share a.btn.twitter { background-color: #59adeb; background-image: url(../images/icon_twitter.svg);}
+
+#Poll .active, #Poll .inactive { transition: left 1.5s ease-in-out; }
+#Poll .active.intro { left: 224px;}
+#Poll .active { left: 226px; }
+
+#Poll .intro.inactive,
+#Poll .inactive.answered { left: -1350px; }
+#Poll .question.active.toggled { left: 10px; }
+
+
+/* MAX 460 breakpoint (iPhone) ----------- */
+@media screen and (max-width:460px) {
+    #Poll { width: 270px; background-size:320px auto; }
+    #Poll h1 {width: 300px; font-size: 1.3em; top: 25px; left: 25px; }
+    #Poll h1 span { line-height: 43px; }
+    #Poll h2 { margin: 0px;}
+    #Poll h3 {font-size: 2.2em; margin-bottom:15px;}
+
+    #Poll .progress { width: 300px; top: 110px; }
+    #Poll .progress div { width: 25px; height: 25px; }
+    #Poll .progress div::after { top: -30px; width: 53px; height: 33px; }
+
+    #Poll .intro { width: 300px; top: 135px; left: 330px;}
+
+    #Poll .question { width: 300px; top: 135px; left: 330px;}
+    #Poll .question .txt { font-size: 1.4em; margin-bottom: 15px; }
+    #Poll .question .ans { font-size: 1em; padding: 5px 10px; margin-bottom: 10px; }
+
+    #Poll .results { width: 260px; top: 150px; left: 330px; }
+    #Poll .results .share { margin-top: 20px; }
+    #Poll .results a.btn { margin-bottom: 20px; }
+
+    #Poll .active { left:25px; }
+    #Poll .intro.inactive, #Poll .inactive.answered {left: -750px;}
+}
+
+/* 768 breakpoint (iPad) ----------- */
+@media only screen  and (min-width : 768px) {
+    #Poll { width: 700px; }
+    #Poll.toggled { width: 540px; }
+    #Poll .progress { position: relative; left: 11px; }
+    #Poll .active.intro { left: 224px;}
+    #Poll .active.intro.toggled { left: 144px;}
+    #Poll .active { left: 115px; }
+    #Poll .question.active.toggled { left: 10px; }
+}
+/* 992 breakpoint ----------- */
+@media only screen  and (min-width : 992px) {
+    #Poll { width: 940px; }
+    #Poll.toggled { width: 705px; }
+    #Poll .progress { position: relative; left: 5px; }
+    #Poll .active.intro { left: 339px;}
+    #Poll .active.intro.toggled { left: 219px;}
+    #Poll .active { left: 226px; }
+    #Poll .question.active.toggled { left: 110px; }
+}
+
+/* 1200 breakpoint ----------- */
+@media only screen  and (min-width : 1200px) {
+    #Poll { width: 1050px; }
+    #Poll.toggled { width: 820px; }
+    #Poll .progress { position: relative; left: 1px; }
+    #Poll .active.intro { left: 389px;}
+    #Poll .active.intro.toggled { left: 272px;}
+    #Poll .active { left: 277px; }
+    #Poll .question.active.toggled { left: 160px; }
+}
+
+/* 1300 breakpoint ----------- */
+@media only screen  and (min-width : 1300px) {
+    #Poll.toggled { width: 880px; }
+    #Poll .active.intro.toggled { left: 302px;}
+    #Poll .question.active.toggled { left: 195px; }
+}
+
+/* 1200 breakpoint ----------- */
+@media only screen  and (min-width : 1400px) {
+    #Poll.toggled { width: 960px; }
+    #Poll .active.intro.toggled { left: 342px;}
+    #Poll .question.active.toggled { left: 235px; }
+}

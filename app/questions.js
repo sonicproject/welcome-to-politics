@@ -1,6 +1,8 @@
-angular.module('questions',[
+/*
 
-])
+angular.module('questions',[])
+
+
 .controller('MainCtrl', function($scope) {
     $scope.categories = [
         {"id": 0, "name":"Election 2016"},
@@ -20,5 +22,6 @@ angular.module('questions',[
         {"id": 14, "name":"Social Issues"},
         {"id": 15, "name":"Health Care"}
     ];
-})
-;
+});
+
+*/

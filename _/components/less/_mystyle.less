@@ -1,32 +1,36 @@
 @import "_menu_icon.less";
 @import "_layout.less";
 @import "_sidebar.less";
+@import "_poll.less";
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
 
 body {margin: 0;overflow-x: hidden; background-color: white;}
+hr { color: #fff;}
+.main {z-index: -5;}
+.background { z-index: 99;}
+blockquote {margin: 10px 35px 0px 55px;}
 
-hr { width
-    color: #fff;
+.headbar {
+    height:56px;
+    background-color: #000;
 }
-.btn-lg{
+
+.header h1 {
+    text-align:center;
+    font-size: 1.8em; font-weight:100;
+}
+
+.header h1 span {
+    display: block; font-weight:900;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:3.3em; line-height:65px;
+}
+
+.btn-lg {
     font-size: 1.2em;
     border-radius: 0px;
     padding: 6px 1.6em 6px 1.6em;
     margin: 1px;
-}
-
-.background { background: #fff; }
-.main { padding-top: 4em;}
-
-.header h1 {
-    text-transform:uppercase;
-    text-align:center;
-    font-size: 2em; font-weight:100;
-}
-
-.header h1 span {
-    display: block; font-weight:900; font-family:'Titillium Web', sans-serif;
-    font-size:3.2em; line-height:65px;
 }
 
 .container.container-resized {
@@ -35,54 +39,85 @@ hr { width
 
 /* 768 breakpoint ----------- */
 @media only screen  and (min-width : 768px) {
-    .background { background: #fff url(../../img/W2P_background_720.png) no-repeat 0px 0px; }
-    .main { padding-top: 6em;}
-    .main.toggled { padding-top:5em;}
-    .header { position: relative; left:10px; }
+    .background { background: url(../../img/W2P_background_740.png) no-repeat 0px 0px;}
+    .main { padding-top: 3.5em;}
+    .main.toggled { padding-top:3em;}
+    .header { position: relative; left:7px; }
+    .header h1 { font-size: 1.6em; font-weight:100;}
+    .header h1 span { font-size:3.0em; line-height:54px;}
+    .container {position:relative; left:-8px;}
+}
+/* 778 breakpoint ----------- */
+@media only screen  and (min-width : 778px) {
+    .container{position:relative; left:-5px;}
+    .container.toggled{position:relative; left:-7px;}
+}
 
-    .header h1 { font-size: 1.7em; font-weight:100;
-    }
-    .header h1 span { font-size:2.9em; line-height:53px;
-    }
+/* 788 breakpoint ----------- */
+@media only screen  and (min-width : 788px) {
+    .container{position:relative; left:0px;}
+}
+
+/* 940 breakpoint ----------- */
+@media only screen  and (min-width : 940px) {
+    .container.toggled{position:relative; left:-5px;}
 }
 
 /* 992 breakpoint ----------- */
 @media only screen  and (min-width : 992px) {
-    .background { background: #fff url(../../img/W2P_background_940.png) no-repeat 0px 0px; }
-    .main { padding-top: 8em;}
-    .main.toggled { padding-top: 6em;}
-    .header { position: relative; left:7px; }
+    .background { background: url(../../img/W2P_background_940.png) no-repeat 0px 0px; }
+    .main { padding-top: 5.5em;}
+    .main.toggled { padding-top: 5em;}
+    .header { position: relative; left:5px; }
+    .header h1 { font-size: 1.8em; font-weight:100;}
+    .header h1 span { font-size:3.2em; line-height:62px;}
+    .container {position:relative; left:-10px;}
+}
+/* 1002 breakpoint ----------- */
+@media only screen  and (min-width : 1002px) {
+    .container{position:relative; left:-5px;}
+}
 
-    .header h1 { font-size: 1.9em; font-weight:100;
-    }
-    .header h1 span { font-size:3.1em; line-height:60px;
-    }
+/* 1012 breakpoint ----------- */
+@media only screen  and (min-width : 1012px) {
+    .container {position:relative; left:0px;}
 }
 
 /* 1200 breakpoint ----------- */
 @media only screen  and (min-width : 1200px) {
-    .background { background: #fff url(../../img/W2P_background_1140.png) no-repeat 0px 0px; }
-    .main { padding-top: 10em;}
-    .main.toggled { padding-top: 7em;}
+    .background { background: url(../../img/W2P_background_1140.png) no-repeat 0px 0px; }
+    .main { padding-top: 6em;}
     .header { position: relative; left:4px; }
+    .header h1 { font-size: 1.9em; font-weight:100;}
+    .header h1 span { font-size:3.3em; line-height:68px;}
+    .container {position:relative; left:-6px;}
+}
 
-    .header h1 { font-size: 2.1em; font-weight:100;
-    }
-    .header h1 span { font-size:3.3em; line-height:72px;
-    }
+/* 1210 breakpoint ----------- */
+@media only screen  and (min-width : 1210px) {
+    .container {position:relative; left:0px;}
+    .container.toggled {position:relative; left:-2px;}
+}
+
+/* 1270 breakpoint ----------- */
+@media only screen  and (min-width : 1270px) {
+    .container.toggled {position:relative; left:-1px;}
 }
 
 /* 1400 breakpoint ----------- */
 @media only screen  and (min-width : 1400px) {
-    .main.toggled { padding-top: 8em;}
+    .main.toggled { padding-top: 6em;}
+    .header h1 { font-size: 2.0em; font-weight:100;}
+    .header h1 span { font-size:3.4em; line-height:74px;}
+    .container.toggled {position:relative; left:0px;}
 }
 
 /* 1500 breakpoint ----------- */
 @media only screen  and (min-width : 1500px) {
-    .main.toggled { padding-top: 9em;}
+    .main.toggled { padding-top: 6.5em;}
 }
 
 /* 1600 breakpoint ----------- */
 @media only screen  and (min-width : 1600px) {
-    .main.toggled { padding-top: 10em;}
+    .main.toggled { padding-top: 7em;}
 }
