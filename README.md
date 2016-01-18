@@ -2,7 +2,7 @@
 
 # Welcome To Politics
 
-The goal is to create a political polling and debate platform.
+The goal is to create a political polling and vigorous debate platform.
 
 I will be posting more information and inviting developers to collaborate with me soon.
 
