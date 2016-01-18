@@ -10,6 +10,6 @@ Live site is hosted at: [welcometopolitics.com](http://www.welcometopolitics.com
 
 
 
-Thank you,
 
+Thank you,
 Kameron White
