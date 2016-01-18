@@ -1,6 +1,6 @@
-# welcome-to-politics
+### welcome-to-politics
 
-# Welcome To Politics (.com)
+# Welcome To Politics
 
 This project is to create a political polling and debate platform.
 
