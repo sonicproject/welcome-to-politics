@@ -21,7 +21,7 @@
         "question" : "Who are you most likely to vote for in 2016?",
         "answers"   : [
             { "id" : 0, "text" : "Bernie Sanders"},
-            { "id" : 1, "text" : "Deez Nuts"},
+            { "id" : 1, "text" : "Captain Crunch"},
             { "id" : 2, "text" : "Hillary Clinton"},
             { "id" : 3, "text" : "Donald Trump"},
             { "id" : 4, "text" : "Rand Paul"},

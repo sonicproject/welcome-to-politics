@@ -47,10 +47,10 @@
                                             ng-click="selectAnswer($parent.$index, $index)"
                                             ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
                                   <div class="feedback">
-                                      <p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
-                                      <p ng-show="myQuestion.correctness === 'incorrect'">Oops! that is not correct.</p>
+                                      <p ng-show="myQuestion.correctness === 'correct'">You voted with the <strong>majority</strong>.</p>
+                                      <p ng-show="myQuestion.correctness === 'incorrect'">You voted with the <strong>minority</strong>.</p>
                                       <p>{{myQuestion.feedback}}</p>
-                                      <div class="btn" ng-click="selectContinue()">Continue</div>
+                                      <div class="btn btn-primary" ng-click="selectContinue()">Continue</div>
                                   </div><!-- feedback -->
                               </div>
                               <div class="results {{(totalQuestions === activeQuestion) ? 'active' : 'inactive'}}">
